@@ -1,11 +1,19 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { Box, Center, Text, useColorModeValue } from 'native-base';
+import React from 'react';
 
 const MovieListScreen = () => {
   return (
-    <View>
-      <Text>MovieListScreen</Text>
-    </View>
+    <Box
+      w="100%"
+      h="100%"
+      bg={useColorModeValue("warmGray.50", "coolGray.800")}>
+      <Center
+        w="100%"
+        h="100%"
+      >
+        <Text>MovieListScreen</Text>
+      </Center>
+    </Box>
   )
 }
 

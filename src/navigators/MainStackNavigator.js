@@ -9,10 +9,11 @@ export function MainStackNavigator() {
   return (
     <MainStack.Navigator
       screenOptions={{
-        headerTintColor: useColorModeValue('black', 'white'),
+        headerTintColor: useColorModeValue('#1f2937', '#fafaf9'),
         headerStyle: {
-          backgroundColor: useColorModeValue("white", "black"),
+          backgroundColor: useColorModeValue("#fafaf9", "#111827"),
         },
+        animation: "slide_from_right",
       }}>
       <MainStack.Screen
         name={'MainMenu'}
