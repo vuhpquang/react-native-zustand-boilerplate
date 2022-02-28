@@ -58,3 +58,11 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Environment variables
+.env
+.babelrc
+yarn.lock
+package-lock.json
+
+.vscode/
