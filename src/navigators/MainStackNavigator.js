@@ -1,12 +1,19 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { MainMenuScreen, MovieListScreen, TodoListScreen } from '../screens';
+import { useColorModeValue } from 'native-base';
 
 const MainStack = createNativeStackNavigator();
 
 export function MainStackNavigator() {
   return (
-    <MainStack.Navigator>
+    <MainStack.Navigator
+      screenOptions={{
+        headerTintColor: useColorModeValue('black', 'white'),
+        headerStyle: {
+          backgroundColor: useColorModeValue("white", "black"),
+        },
+      }}>
       <MainStack.Screen
         name={'MainMenu'}
         component={MainMenuScreen}
