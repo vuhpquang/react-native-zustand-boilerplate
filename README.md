@@ -35,7 +35,7 @@
   <p align="center">
     A React Native Boilerplate using zustand, immer, react-navigation, native-base
     <br />
-    <a href="https://github.com/vuhpquang/react-native-zustand-boilerplate"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/vuhpquang/react-native-zustand-boilerplate/docs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/vuhpquang/react-native-zustand-boilerplate">View Demo</a>
@@ -78,20 +78,18 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `vuhpquang`, `react-native-zustand-boilerplate`, `quangvu2809`, `vuhpquang`, `gmail`, `vuhpquang`, `React Native Zustand Boilerplate`, `A React Native Boilerplate using zustand, immer, react-navigation, native-base`
+A React Native Boilerplate using:
+
+- State-management: [zustand](https://github.com/pmndrs/zustand)
+- Middleware: [immer](https://github.com/immerjs/immer)
+- Navigation: [react-navigation](https://reactnavigation.org/)
+- UI components: [NativeBase](https://nativebase.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-- [Next.js](https://nextjs.org/)
-- [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com)
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
+- [React Native](https://reactnative.dev/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -107,25 +105,74 @@ To get a local copy up and running follow these simple example steps.
 This is an example of how to list things you need to use the software and how to install them.
 
 - npm
+
   ```sh
   npm install npm@latest -g
   ```
 
+- React Native: [Setting up the development environment](https://reactnative.dev/docs/environment-setup)
+
+### Using the Template
+
+#### [Create a new repo from this template](https://github.com/vuhpquang/react-native-zustand-boilerplate/generate)
+
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/vuhpquang/react-native-zustand-boilerplate.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+2. Install packages
+
+- npm
+  ```sh
+  npm install
+  ```
+- yarn
+  ```sh
+  yarn
+  ```
+
+3. Copy the env variables
+
+```sh
+  cp -r .env.example .env
+```
+
+4. Start the metro
+
+- npm
+  ```sh
+  npm start
+  ```
+- yarn
+  ```sh
+  yarn start
+  ```
+
+5. Install on Android or iOS
+
+#### Android
+
+- npm
+  ```sh
+  npm run android
+  ```
+- yarn
+  ```sh
+  yarn android
+  ```
+
+#### iOS
+
+- npm
+  ```sh
+  npm run ios
+  ```
+- yarn
+  ```sh
+  yarn ios
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -135,7 +182,7 @@ This is an example of how to list things you need to use the software and how to
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://github.com/vuhpquang/react-native-zustand-boilerplate/docs)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -143,10 +190,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-  - [ ] Nested Feature
+- [x] Implement react-navigation
+- [x] Zustand
+- [x] Immer Middleware for Zustand
+- [x] Implement Native Base
+- [x] Implement Example
+- [ ] Persist Middleware for Zustand
+  - [x] Implement
+  - [ ] Using pipe from Ramda
 
 See the [open issues](https://github.com/vuhpquang/react-native-zustand-boilerplate/issues) for a full list of proposed features (and known issues).
 
@@ -173,7 +224,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -191,9 +242,13 @@ Project Link: [https://github.com/vuhpquang/react-native-zustand-boilerplate](ht
 
 ## Acknowledgments
 
-- []()
-- []()
-- []()
+- [zustand](https://github.com/pmndrs/zustand)
+- [immer](https://github.com/immerjs/immer)
+- [react-navigation](https://reactnavigation.org/)
+- [NativeBase](https://nativebase.io/)
+- [react-native-eva-icons](https://github.com/artyorsh/react-native-eva-icons)
+- [uuid](https://github.com/uuidjs/uuid)
+- [react-native-linear-gradient](https://github.com/react-native-linear-gradient/react-native-linear-gradient)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
