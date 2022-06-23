@@ -7,6 +7,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
   ],
+  parser: '@babel/eslint-parser',
   plugins: ['import'],
   rules: {
     'no-console': ['error', { allow: ['error', 'debug'] }],
